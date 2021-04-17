@@ -1,0 +1,13 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: provider
+eureka:
+  client:
+    #注册中心相关配置，是拿来注册其他的微服务，下面是不注册自己的意思
+    service-url:
+      #默认的注册中心的数据
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      prefer-ip-adress: true
