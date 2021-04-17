@@ -1,0 +1,9 @@
+Server:
+  port: 8070
+eureka:
+  client:
+    serviceUrl:
+      defaltZone: httpL//localhost:8761/eureka/
+spring:
+  application:
+    name: configclient
