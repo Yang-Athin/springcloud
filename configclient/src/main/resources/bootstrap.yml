@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      name: configclient
+      #这里名字是config文件下的名字
+      label: master
+      discovery:
+        enabled: true
+        service-id: configserver
+        #这里的名字是configserver文件下的配置文件中name的名字，这样就可以联系起来
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
